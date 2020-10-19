@@ -109,7 +109,7 @@ body{
     display: none;
     width: inherit;
     height: inherit;
-    top: -300 ;
+    top: -300px ;
     z-index: 1;
     background-color: rgb(197, 236, 205);
     opacity: 0.9;
@@ -143,8 +143,11 @@ body{
        display: flexbox;
     }
     
-    .startgame,.endgame{
+    .startgame{
         display: flexbox;
+        top:-7vh
+    }
+    .endgame{
         top:-7vh
     }
     
