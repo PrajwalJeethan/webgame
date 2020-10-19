@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css"/>
+        
+    </head>
+    <body>
+        <div id="container">
+            <h1>Tic Tac Toe</h1>
+            <div class="cell" id="q0"></div>
+            <div class="cell" id="q1"></div>
+            <div class="cell" id="q2"></div>
+            <div class="cell" id="q3"></div>
+            <div class="cell" id="q4"></div>
+            <div class="cell" id="q5"></div>
+            <div class="cell" id="q6"></div>
+            <div class="cell" id="q7"></div>
+            <div class="cell" id="q8"></div>
+            <div class="startgame">
+                <div class="difficulty">
+                    Difficulty level
+                    <div class="level" id="easy">Easy</div>
+                    <div class="level" id="normal">Normal</div>
+                    <div class="level" id="hard">Hard</div>
+                </div>
+                <div class="player" id="x">X</div>
+                <div class="player" id="o">O</div>
+                <button disabled=true type="button" onclick="startGame()">Play</button>
+            </div>
+            <div class="endgame">
+                <div class="text" ></div>
+                <div class="replay">
+                    <button onclick="replay()">Restart</button>
+                </div>
+            </div>
+        </div>
+        
+       
+        
+        <script  language="javascript" src="./main.js"></script>
+    </body>
+</html>
