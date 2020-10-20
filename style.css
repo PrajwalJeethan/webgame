@@ -33,25 +33,21 @@ body{
 }
 .startgame{
     display:block;
-    
     width:inherit;
     height: inherit;
-    top: -300px ;
-    z-index: 1;
     background-color: rgb(197, 236, 205);
     opacity: 0.9;
     position: absolute;
     padding-top: 50px;
     padding-bottom: 15px; 
-    margin-top: 40%;
-    margin-bottom: 50%;
+    margin-bottom: 50vh;
     border-radius: 5px;
     text-align: center;
     color: gray;
     font-size: 2em;
 }
 .startgame .difficulty .text{
-    text-align: left;
+    text-align: center;
     font-size: 20px;
     padding: 10px;
 }
@@ -109,15 +105,12 @@ body{
     display: none;
     width: inherit;
     height: inherit;
-    top: -300px ;
-    z-index: 1;
     background-color: rgb(197, 236, 205);
     opacity: 0.9;
     position: absolute;
     padding-top: 50px;
     padding-bottom: 15px; 
-    margin-top: 40%;
-    margin-bottom: 50%;
+    margin-bottom: 50vh;
     border-radius: 5px;
     text-align: center;
     color: black;
@@ -138,17 +131,48 @@ body{
     color:whitesmoke;
     
 }
-@media screen and (max-width:1000px){
+@media screen and (max-width:319px){
     #container {
-       display: flexbox;
+       height:150px;
+       width:150px;
+       margin-top: 50px;
+    }
+    #container h1{
+       
+        font-size: 20px;
+        margin-bottom: 25px;
     }
     
-    .startgame{
-        display: flexbox;
-        top:-7vh
+    .cell{
+        height: 45px;
+        width:45px;
+        padding-bottom: 1%;
+        font-size: 40px;
     }
-    .endgame{
-        top:-7vh
+    #q0,#q1,#q2,#q3,#q4,#q5{
+        border-bottom: 5px solid black;
     }
+    #q0,#q1,#q3,#q4,#q6,#q7{
+        border-right: 5px solid black;
+    }
+    .startgame .difficulty .text{
+        
+        font-size: 19px;
+        padding: 0px;
+    }
+    .startgame .difficulty .level{
+        margin: 5px 10px 5px 10px;
+        font-size: 10px;
+    }
+    .startgame .player{
+        font-size: 20px;
+        margin: 12px 20px ;
+    }
+    .startgame button{
+        font-size: 10px;
+        padding: 7px 15px;
+        border-radius: 7px;
+    }
+    
     
 }
